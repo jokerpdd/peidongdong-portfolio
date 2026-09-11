@@ -1,0 +1,11 @@
+{
+  "name": "peidongdong-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node tools/validate.mjs",
+    "test": "node --test tools/flow.test.mjs",
+    "start": "node tools/server.mjs"
+  },
+  "engines": {"node": ">=22"}
+}

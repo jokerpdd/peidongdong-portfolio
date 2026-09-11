@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071126">
+  <meta name="description" content="裴冬冬的个人作品集。8 年视觉设计经验，专注 AIGC 创意、品牌与 IP 视觉。">
+  <title>裴冬冬 PEI DONGDONG — 视觉设计与 AIGC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./assets/scene-01.webp" media="(min-width: 761px)">
+  <link rel="preload" as="image" href="./assets/mobile-01.webp" media="(max-width: 760px)">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-nav">
+    <button class="wordmark" id="homeButton" aria-label="回到首页">PEI DONGDONG<span>视觉设计 · AIGC</span></button>
+    <nav aria-label="主导航"><button data-go-scene="1">关于</button><button data-go-scene="2">经历</button><a href="#works">作品 <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero" id="top" aria-label="个人介绍">
+      <div class="stage" id="stage" data-scene="0" data-busy="false">
+        <picture class="hero-poster"><source media="(max-width:760px)" srcset="./assets/mobile-01.webp"><img id="heroImage" src="./assets/scene-01.webp" alt="暗蓝色光影中的个人卡通形象" fetchpriority="high"></picture>
+        <video class="hero-video" id="transitionVideo" muted playsinline preload="auto" disablepictureinpicture aria-hidden="true"></video>
+        <canvas id="waterCanvas" class="water-canvas" aria-hidden="true"></canvas>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="scene-copy intro-copy" data-copy="0">
+          <p class="eyebrow">VISUAL DESIGN PORTFOLIO / 2026</p>
+          <h1>裴冬冬<span>PEI DONGDONG</span></h1>
+          <p>视觉设计 × AIGC 创意</p>
+        </div>
+        <div class="scene-copy about-copy" data-copy="1" hidden>
+          <p class="eyebrow">01 — ABOUT ME</p>
+          <h2>你好，我是裴冬冬。</h2>
+          <p class="about-lede">视觉设计师，<br>也是生成式视觉的探索者。</p>
+          <p class="about-body">深耕电商与品牌活动核心场景，擅长品牌视觉体系、全域电商设计、AIGC 创意与线下活动全案。</p>
+          <div class="stats"><div><strong>8<span>年</span></strong><p>视觉设计经验</p></div><div><strong>3<span>年</span></strong><p>AIGC 设计实践</p></div><div><strong>50<span>+</span></strong><p>独立主导项目</p></div></div>
+          <a class="email-link" href="mailto:542232657@qq.com">542232657@qq.com <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="scene-copy experience-copy" data-copy="2" hidden>
+          <p class="eyebrow">02 — SELECTED EXPERIENCE</p>
+          <h2>让创意，走向落地。</h2>
+          <ol class="experience-list">
+            <li><span class="experience-date">2025.03 — 2025.05</span><h3>Apple Trade In 环保回收 H5</h3><p>页面视觉与叙事插画，建立绿色回收主题的视觉表达。</p></li>
+            <li><span class="experience-date">2023.08 — 2024.04</span><h3>多麦集团户外音乐节</h3><p>从品牌标识到场地物料，统筹活动全案视觉设计。</p></li>
+            <li><span class="experience-date">2022.07 — 2023.05</span><h3>企业品牌视觉体系升级</h3><p>LOGO、品牌 IP 与全场景物料设计，统一品牌形象。</p></li>
+          </ol>
+        </div>
+        <div class="hero-bottom">
+          <div class="scene-dots" aria-label="场景选择"><button data-go-scene="0" aria-label="首屏" aria-current="step"><span>01</span></button><button data-go-scene="1" aria-label="个人简介"><span>02</span></button><button data-go-scene="2" aria-label="项目经历"><span>03</span></button></div>
+          <button class="next-cue" id="nextCue"><span id="cueText">点击或向下滑动</span><span class="cue-arrow" aria-hidden="true">↓</span></button>
+        </div>
+        <p id="transitionStatus" class="sr-only" role="status"></p>
+      </div>
+    </section>
+
+    <section class="works" id="works" aria-labelledby="worksTitle">
+      <div class="works-heading"><div><p class="eyebrow">SELECTED WORKS</p><h2 id="worksTitle">精选作品<span>2026</span></h2></div><p>从生成式影像，到品牌与视觉表达。</p></div>
+      <nav class="work-nav" aria-label="作品分类"><a href="#aigc" class="is-current">01 <span>AIGC</span></a><a href="#brand">02 <span>品牌创意 / IP 视觉</span></a><a href="#explore">03 <span>更多视觉探索</span></a></nav>
+      <section class="project-group" id="aigc" aria-labelledby="aigcTitle"><div class="group-heading"><h3 id="aigcTitle">AIGC<span>生成式商业视觉</span></h3><span class="group-count" id="aigcCount"></span></div><div class="project-grid aigc-grid" id="aigcGrid"></div></section>
+      <section class="project-group" id="brand" aria-labelledby="brandTitle"><div class="group-heading"><h3 id="brandTitle">品牌创意 / IP 视觉<span>品牌形象与场景表达</span></h3><span class="group-count" id="brandCount"></span></div><div class="project-grid brand-grid" id="brandGrid"></div></section>
+      <section class="project-group" id="explore" aria-labelledby="exploreTitle"><div class="group-heading"><h3 id="exploreTitle">更多视觉探索<span>持续创作，持续探索</span></h3><span class="group-count" id="exploreCount"></span></div><div class="project-grid explore-grid" id="exploreGrid"></div></section>
+      <noscript><p>开启 JavaScript 后即可切换人物场景，并在站内浏览作品。</p></noscript>
+      <footer class="site-footer"><div><p class="eyebrow">LET'S CONNECT</p><a href="mailto:542232657@qq.com">一起聊聊下一个创意。 <span>↗</span></a><a class="footer-email" href="mailto:542232657@qq.com">542232657@qq.com</a></div><div class="footer-meta"><span>裴冬冬 / 视觉设计师</span><a href="tel:13615867735">136-1586-7735</a><span>© 2026 PEI DONGDONG</span></div></footer>
+    </section>
+  </main>
+
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="projectTitle">
+    <div class="dialog-bar"><div><span id="projectCategory"></span><strong id="projectBarTitle"></strong></div><button id="closeProject" aria-label="关闭作品，返回原位置">关闭 <span aria-hidden="true">×</span></button></div>
+    <div class="dialog-scroll" id="projectScroll"><div class="project-intro"><p class="eyebrow" id="projectLabel"></p><h2 id="projectTitle"></h2><p id="projectDescription"></p></div><div class="project-media" id="projectMedia"></div><div class="project-end"><span>THANK YOU FOR VIEWING</span><button id="endClose">返回作品列表 <span aria-hidden="true">↗</span></button></div></div>
+  </dialog>
+  <script src="./projects.js" defer></script>
+  <script src="./water.js" defer></script>
+  <script src="./flow.js" defer></script>
+  <script src="./script.js" defer></script>
+</body>
+</html>
