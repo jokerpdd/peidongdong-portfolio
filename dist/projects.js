@@ -1,17 +1,17 @@
 window.PORTFOLIO_PROJECTS = [
   {
-    "id": "northface",
+    "id": "nike-ecommerce",
     "group": "aigc",
-    "title": "北面商业广告片",
-    "tag": "AIGC 影像",
-    "description": "围绕冲锋衣产品的 AIGC 商业影像创作。",
-    "cover": "./assets/northface-cover.webp",
+    "title": "耐克电商全流程",
+    "tag": "AIGC 电商视觉",
+    "description": "从产品主图、卖点展示到详情页内容的耐克电商视觉流程。",
+    "cover": "./assets/nike-ecommerce-cover.webp",
     "featured": true,
     "media": [
       {
         "type": "video",
-        "src": "./assets/northface.mp4",
-        "poster": "./assets/northface.webp"
+        "src": "./assets/nike-ecommerce.mp4",
+        "poster": "./assets/nike-ecommerce-cover.webp"
       }
     ]
   },
@@ -64,18 +64,18 @@ window.PORTFOLIO_PROJECTS = [
     ]
   },
   {
-    "id": "nike-ecommerce",
+    "id": "northface",
     "group": "aigc",
-    "title": "耐克电商全流程",
-    "tag": "AIGC 电商视觉",
-    "description": "从产品主图、卖点展示到详情页内容的耐克电商视觉流程。",
-    "cover": "./assets/nike-ecommerce-cover.webp",
+    "title": "北面商业广告片",
+    "tag": "AIGC 影像",
+    "description": "围绕冲锋衣产品的 AIGC 商业影像创作。",
+    "cover": "./assets/northface-cover.webp",
     "featured": false,
     "media": [
       {
         "type": "video",
-        "src": "./assets/nike-ecommerce.mp4",
-        "poster": "./assets/nike-ecommerce-cover.webp"
+        "src": "./assets/northface.mp4",
+        "poster": "./assets/northface.webp"
       }
     ]
   },
