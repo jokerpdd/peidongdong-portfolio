@@ -126,10 +126,12 @@ window.PORTFOLIO_PROJECTS = [
       {
         "type": "image",
         "src": "./assets/duomai-ip.webp",
-        "width": 2200,
-        "height": 4940
+        "width": 1800,
+        "height": 5055
       }
-    ]
+    ],
+    "longform": true,
+    "longformHeight": 5055
   },
   {
     "id": "pink-rabbit",
@@ -143,18 +145,12 @@ window.PORTFOLIO_PROJECTS = [
       {
         "type": "image",
         "src": "./assets/pink-rabbit/slice-01.webp",
-        "width": 1600,
-        "height": 3600
-      },
-      {
-        "type": "image",
-        "src": "./assets/pink-rabbit/slice-02.webp",
-        "width": 1600,
-        "height": 3600
+        "width": 1800,
+        "height": 5063
       }
     ],
     "longform": true,
-    "longformHeight": 7200
+    "longformHeight": 5063
   },
   {
     "id": "duomai-anniversary",
@@ -336,10 +332,12 @@ window.PORTFOLIO_PROJECTS = [
       {
         "type": "image",
         "src": "./assets/explore-01.webp",
-        "width": 2200,
-        "height": 1238
+        "width": 1800,
+        "height": 3038
       }
-    ]
+    ],
+    "longform": true,
+    "longformHeight": 3038
   },
   {
     "id": "h5-visual",
@@ -353,10 +351,12 @@ window.PORTFOLIO_PROJECTS = [
       {
         "type": "image",
         "src": "./assets/explore-02.webp",
-        "width": 2200,
-        "height": 1467
+        "width": 1800,
+        "height": 4237
       }
-    ]
+    ],
+    "longform": true,
+    "longformHeight": 4237
   },
   {
     "id": "festival-posters",
